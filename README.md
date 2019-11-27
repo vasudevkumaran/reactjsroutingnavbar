@@ -1,3 +1,64 @@
+Students Record Api calls
+
+
+Login
+
+Url: https://teknosapps.com/studentsv2/clients/checklogin
+
+Method: POST
+
+Body payload : user_email, user_password
+
+Header : 'Content-Type': ‘application/json’
+
+Test login : user_email : admin@admin.com, user_password: 12345678#
+_______________
+
+Get all students record
+
+Url: https://teknosapps.com/studentsv2/students/get_all_students
+
+Method: POST
+
+Body payload : 
+
+Header : 'Content-Type': ‘application/json’, ‘Authorization’ : ___JWT__
+_______________
+
+Add a student record
+
+Url: https://teknosapps.com/studentsv2/students/add_student
+
+Method: POST
+
+Body payload : student_name, student_roll_num, student_subject, student_passed
+
+Header : 'Content-Type': ‘application/json’, ‘Authorization’ : ___JWT__
+_______________
+
+Edit a student record
+
+Url: https://teknosapps.com/studentsv2/students/edit_student
+
+Method: POST
+
+Body payload : student_id, student_name, student_roll_num, student_subject, student_passed
+
+Header : 'Content-Type': ‘application/json’, ‘Authorization’ : ___JWT__
+_______________
+
+Delete a student record
+
+Url: https://teknosapps.com/studentsv2/students/delete_student
+
+Method: POST
+
+Body payload : student_id
+
+Header : 'Content-Type': ‘application/json’, ‘Authorization’ : ___JWT__
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
